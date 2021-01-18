@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Cashier Calculator</title>
+    <link rel="stylesheet" type="text/css" href="cashier.css">
+    <script src="cashier.js"></script>
+</head>
+
+<body onload="myDisplayDateTime()">
+    <div class="allPage">
+        <div class=admin>
+            <h1>Admin</h1>
+            <p>Add a new prouct</p>
+            <div class="productAdd">
+                <input id="productName" type="text" name="productName" placeholder="product name">
+                <button type="button" onclick="addingItem()">Add Product</button>
+                <br>
+            </div>
+            <br>
+            <p>Select a product then add the price per unit</p>
+            <div class="pricePerUnit">
+                <select id="firstSelect">
+                </select>
+                  <input id="price" type="text" placeholder="price" pattern="^[1-9][0-9]{0,9}$" >
+                <button id="addPrice" type="button" onclick="addPriceOfProduct()">Add Price</button>
+            </div>
+                <p id="msg"></p>
+        </div>
+        <div class="checkout">
+            <h1>Checkout</h1>
+            <div class=untiAdding>
+                <br>
+                <button class="trans" onclick="history.go(0)" type="button">New Transaction</button>
+                <br>
+                <p> Select a product then type the number of units</p>
+                <div class="numSelButtons">
+                    <div class="selAndCart">
+                        <select id="secondSelect">
+                        </select>
+                        <div>
+                            <p id="display"></p>
+                        </div>                   
+                        <div class="addtocart">
+                            <button type="button" onclick="addToCart();amtDue();">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="nineButtons">
+                        <div class="firstThree">
+                            <button onclick="addUnitsToProduct1()" value="1" type="button">1</button>
+                            <button onclick="addUnitsToProduct2()" value="2" type="button">2</button>
+                            <button onclick="addUnitsToProduct3()" value="3" type="button">3</button>
+                        </div>
+                        <div class="middleThree">
+                            <button onclick="addUnitsToProduct4()" value="4" type="button">4</button>
+                            <button onclick="addUnitsToProduct5()" value="5" type="button">5</button>
+                            <button onclick="addUnitsToProduct6()" value="6" type="button">6</button>
+                        </div>
+                        <div class="lastThree">
+                            <button onclick="addUnitsToProduct7()" value="7" type="button">7</button>
+                            <button onclick="addUnitsToProduct8()" value="8" type="button">8</button>
+                            <button onclick="addUnitsToProduct9()" value="9" type="button">9</button>
+                        </div>
+                        <div class="lastThree">
+                            <button onclick="addUnitsToProduct0()" value="0" type="button">0</button>
+                        </div>
+                    </div>
+                    <div class="amtdue">
+                        <button onclick="amtDue2()" type="button">Amount due</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="recipt">
+            <h1>Receipt</h1>
+            <div class="tableHead">
+                <table id="headTable">
+                    <thead>
+                        <tr class="noBorder">
+                            <th id="date" colspan="4"></th>
+                        </tr>
+                        <tr class="noBorder">
+                            <th id="time" colspan="4"></th>
+                        </tr>
+                        <tr>
+                            <th>Product</th>
+                            <th>$/unit</th>
+                            <th>Unit(s)</th>
+                            <th>Price</th>
+                        </tr>
+                    </thead>
+                    </table>
+                </div>
+                <div class="table" style="height:250px; overflow-y: scroll;">
+                    <table id="thisTable">
+                        </thead>
+                        <tbody>
+                        </tbody>
+                        <tfoot>
+                            <tr class="noBorder">
+                                <td colspan="4" id="totalPrice" style = "text-align: left">Total Price:</td>
+                            </tr>
+                            <tr class="noBorder">
+                                <td colspan="4" id="totalTax" style = "text-align: left">Taxes:</td>
+                            </tr>
+                            <tr class="noBorder">
+                                <td colspan="4" id="totalAmt" style = "text-align: left">Amount Due:</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+            </div>
+    
+    </body>
+</html>

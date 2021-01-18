@@ -1,0 +1,28 @@
+#menu_div{
+	height:50px;
+	width:1000px;
+	background-color: blueviolet;
+	margin:auto;
+	margin-top:30px;
+	
+	}
+#wrapper{
+	margin:auto;
+	widows:1500px;
+}
+#body_div{
+    margin-top:20px;
+}
+a {
+	margin-top:25px;
+	padding:10px;
+	display:inline-block;
+	widows: 300px;
+	font-size: 20px;
+	font-style:bold,italic;
+	color: ivory;
+	background-color:lightseagreen;
+	text-decoration:none;
+}
+a:hover{background-color:gray;
+}

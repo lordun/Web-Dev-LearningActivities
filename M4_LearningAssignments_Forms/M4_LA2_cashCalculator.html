@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
+        <style>
+        #wrapper{
+            background-color: cadetblue;
+            width:1600px;
+            height:1000px;
+			margin:100px, 0px;
+            text-align: center;
+            position: absolute;
+            top:0px;
+        }
+        .container1{
+            background-color: rgb(136, 172, 173);
+            width: 400px ;
+            height: 350px;
+            box-sizing: border-box;
+            margin:50 px, 25 px;
+            padding:16px;
+            position: absolute;
+            top:150px;
+            right: 0px;
+            left:150px;
+        }
+        .container2{
+            background-color: blanchedalmond;
+            width: 400px;
+            height: 350px;
+            box-sizing: border-box;
+            margin:50 px, 25 px;
+            padding:16px;
+            position: absolute;
+            top:150px;
+            right: 0px;
+            left:550px;
+            
+        }
+        .container3{
+            background-color: rgb(136, 172, 173);
+            width: 400px;
+            height: 350px;
+            box-sizing: border-box;
+            margin:50 px, 25 px;
+            padding:12px;
+            position: absolute;
+            top:150px;
+            right: 0px;
+            left:950px;
+        }
+        h3{
+            background-color: rgb(106, 142, 143);
+            color: blanchedalmond;
+        }
+
+        label[for=product]{
+            text-align: left;  
+        }
+        button[type=amount]{
+            width: 40%;
+            padding: 5px 10px;
+            margin-top: 10px;
+            float: right;        
+}
+        </style>
+    </head>
+    <body>
+        <div id ="wrapper">
+            <form action="/login.js" method="post">              
+                    <div class="container1">
+                        <h3>Admin</h3><br />
+                        <label for="product">Add New Product</label><br />
+                        <input type="text" placeholder="Product Name" id="product" name="product">
+                        <button type="submit"><b>Add Product</b></button><br /><br /><br />
+                        <label for="price">Select a product and add the price per unit</label><br />
+                        <select id="select product">
+                            <option value="apples">Apples</option>
+                            <option value="bananas">Bananas</option>
+                            <option value="tomatoes">Tomatoes</option>
+                            <option value="oranges">Oranges</option>
+                            <option value="cucumber">Cucumber</option>
+                        </select>
+                        <input type="text" placeholder="Price" id="price" name="price">
+                        <button type="submit"><b>Add Price</b></button><br /><br />
+                    </div>
+                    <div class="container2">
+                        <h3>Checkout</h3><br />
+                        <button type="new"><b>New Transaction</b></button><br /><br />
+                        <label for="price">Select a product and type the number of units</label><br />
+                        <select id="select product">
+                            <option value="apples">Apples ($./unit)</option>
+                            <option value="bananas">Bananas ($./unit)</option>
+                            <option value="tomatoes">Tomatoes ($./unit)</option>
+                            <option value="oranges">Oranges ($./unit)</option>
+                            <option value="cucumber">Cucumber ($./unit)</option>
+                        </select>
+                        <button type="submit"><b>Add to cart</b></button><br /><br />
+                        <button type="button" class="btn btn-dark btn-sm">1</button>
+                        <button type="button" class="btn btn-dark btn-sm">2</button>
+                        <button type="button" class="btn btn-dark btn-sm">3</button><br />
+                        <button type="button" class="btn btn-dark btn-sm">4</button>
+                        <button type="button" class="btn btn-dark btn-sm">5</button>
+                        <button type="button" class="btn btn-dark btn-sm">6</button><br />
+                        <button type="button" class="btn btn-dark btn-sm">7</button>
+                        <button type="button" class="btn btn-dark btn-sm">8</button>
+                        <button type="button" class="btn btn-dark btn-sm">9</button><br />
+                        <button type="amount"><b>Amount Due</b></button><br />                        
+                    </div>
+                    <div class="container3">
+                        <h3>Reciept</h3><br />
+                        <table class="table table-bordered table-sm">
+                            <thead>
+                              <tr>
+                                <th colspan="4">Date: April 03, 2020<br />
+                                    Time: 9:03am
+                                </th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>Product</td>
+                                <td>$/unit</td>
+                                <td>Unit(s)</td>
+                                <td>Price</td>
+                              </tr>
+                              <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                              </tr>
+                              <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                              </tr>
+                            </tbody>
+                            <tfoot>
+                                <th colspan="4">Total Price:<br />
+                                                Taxes:<br />
+                                                Amount Due:
+                            </tfoot>
+                          </table>
+                     </div>
+            </form>
+        </div>
+    </body>
+</html>

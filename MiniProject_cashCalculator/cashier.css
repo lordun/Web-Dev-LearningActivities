@@ -1,0 +1,141 @@
+.allPage
+{
+    display: flex;
+    flex: 1;
+}
+h1
+{
+    color: white;
+    background-color: #696969;
+    text-align: center;
+    margin: 0;
+}
+.admin
+{ 
+    flex : 1 1 200px;
+    border-right:3px solid white;
+    background-color: #DCDCDC;
+    
+}
+.checkout
+{
+    flex : 1 1 200px;
+    border-right:3px solid white;
+    background-color: #DCDCDC;
+    
+}
+.recipt
+{
+    flex :1 1 200px;
+    border-right:3px solid white;
+    background-color: #DCDCDC;
+    
+}
+.productAdd
+{
+    display: flex;
+    justify-content: center;
+    
+}
+input
+{
+    height: 20px;
+}
+button
+{
+    margin: 5px;
+    background-color: #A9A9A9;
+    font-size: 20px;
+}
+.pricePerUnit
+{
+    display: flex;
+    justify-content: space-around;
+    
+}
+.trans
+{
+    width: 350px;
+    align-self: center;
+}
+select
+{
+    width:100px;
+    height:30px;
+    margin-left: 20px;
+}
+#secondSelect
+{
+    width:150px;
+    height:30px;
+    margin-left: 20px;
+}
+
+.untiAdding
+{
+    display: flex;
+    flex-direction: column;
+}
+.selAndCart
+{
+    display: flex;
+    justify-content: space-between;
+}
+.nineButtons
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.firstThree,.middleThree,.lastThree
+{
+    display: flex;
+    justify-content: center;
+}
+
+.amtdue
+{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+}
+table,th,td
+{
+    border: .5px solid;
+    column-width: 150px;
+    text-align: center;
+    
+}
+
+#headTable
+{
+    border-collapse: collapse;
+    width: 96.72%;
+    background-color:white;
+    margin-top: 20px;
+    
+}
+
+#thisTable
+{
+    border-collapse: collapse;
+    width: 100%;
+    background-color:white;
+   
+}
+.noBorder tr
+{
+    border: none;
+    text-align: left;
+    
+    
+    
+}
+
+
+
+
+
+
+
+

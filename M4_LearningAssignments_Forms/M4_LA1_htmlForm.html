@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+#wrapper{
+  margin: auto;
+  width: 960px;
+  background-color: rgb(195, 222, 248);
+  border: groove rgb(110, 141, 243) 4px;
+  text-align: center;
+}
+.container {
+  padding: 16px;
+  background-color:rgb(204, 229, 253);
+}
+input[type=text] {
+  width: 25%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+button {
+  background-color: rgb(103, 100, 248);
+  color:ivory;
+  padding: 14px 20px;
+  margin: 8px 0;
+  cursor: pointer;
+  width: 10%;
+}
+</style>
+</head>
+<body>
+    <div id="wrapper">
+    <h2>HTML Form</h2>
+    <form action="/login.js" method="post">
+      <div class="container">
+        <label for="name">Name</label><br />
+        <input type="text" placeholder="Enter Name" id="name" name="name"><br />
+        <br />
+        <button type="submit"><b>Send</b></button><br />
+        <br />
+        <label>
+            <input type="checkbox" name="red">Red</label>
+
+          <label>
+            <input type="checkbox" name="blue">Blue</label>
+            <br />
+            <br />
+
+          <label>
+            <input type="radio" name="select">Yes</label>
+
+          <label>
+            <input type="radio" name="select">No</label>
+            <br />
+            <br />
+          
+          <label for="day">Day of the Week</label>
+
+            <select id="day">
+                <option value="monday">Monday</option>
+                <option value="tuesday">Tuesday</option>
+                <option value="wednesday">Wednesday</option>
+                <option value="thrusday">Thrusday</option>
+                <option value="friday">Friday</option>
+                <option value="saturday">Saturday</option>
+                <option value="sunday">Sunday</option>
+            </select>
+      </div>
+    </form>
+    </div>
+</body>
+</html>

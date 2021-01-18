@@ -1,0 +1,80 @@
+.header{
+	position: relative;
+	background-color:rgb(85, 83, 83);
+	font-family: 'Trade Winds';
+	margin-top: 15px;
+    padding: 15px;
+}
+.menu {
+	position: absolute;
+	top: 100px;
+	left: 20px;
+	font-size: 18px;
+  }
+h1{
+	font-family:'Trade Winds';
+	font-size:40px;
+	font-weight:bolder;
+	margin-top: 20px;
+	text-align: center;
+}
+h3 {
+	text-decoration: underline;
+	text-align: left;
+  }
+h4 {
+	text-decoration: underline;
+	text-align: left;
+  }
+#body_div{
+	font-family:"Shadows Into Light Two";
+	font-size:20px;
+	font-weight: bolder;
+	width: 900px;
+	margin-top: 100px;
+	margin-left: 130px		
+}
+a{
+	margin-top:20px;
+	padding:15px;
+	display:block;
+	width:300px;
+	text-align:center;
+	font-size: 20px;
+	font-family: 'Trade Winds';	  
+	color:white;
+	background-color:black;
+	text-decoration:none;	
+}	
+a:hover{
+	background-color:rgb(94, 164, 197);
+	font-weight:bold;
+}
+.a{	
+	background-color:rgb(94, 164, 197);
+	font-weight:bolder;
+}
+#a{
+	background-color:rgb(94, 164, 197);
+	font-weight:bolder;
+}
+.footer{
+	font-family:"Shadows Into Light Two";
+	font-size:20px;
+	margin-top: 15px;
+	padding-top: 100px;
+}
+ul.ul1 {
+	list-style-type: circle;
+	text-align:left;
+}
+#logodk{
+    position: absolute;
+    max-width: 300px;
+    margin-left:1200px;
+    float:right;
+	top: 0px;
+}
+p.big {
+    line-height: 1.8;
+}
